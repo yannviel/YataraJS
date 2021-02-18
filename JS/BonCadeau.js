@@ -14,3 +14,21 @@ mapPrixDuree.forEach((key, val) => {
 
 });
 select.innerHTML = str;
+
+
+
+var selectPrix = document.getElementById('PrixDuree')
+selectPrix.addEventListener('change', afficherRecap)
+
+
+function afficherRecap() {
+    var divRecap = document.getElementById('recap')
+    var selection = document.getElementById('PrixDuree')
+    var texte = selection.options[selection.selectedIndex].text
+    var prix = selection.options[selection.selectedIndex].value
+
+    divRecap.innerHTML = '<h4>Récapitulatif de la commande :</h4>' +
+        'qaw4'+
+        '<p>'+'Durée : '+texte+'</p>' +
+        '<p>'+'Prix : '+prix+'</p>'
+}

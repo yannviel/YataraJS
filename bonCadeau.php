@@ -61,6 +61,11 @@ $typeSelect = null;
                 </div>
                 <div class="form-group">
 
+                    <div id="recap">
+
+
+                    </div>
+
 
 
 
@@ -126,6 +131,11 @@ $typeSelect = null;
                                 }
                                 ?>
                                 <br>
+
+                                  <div id="recap">
+
+
+                                  </div>
 
 
 
