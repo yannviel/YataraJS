@@ -1,0 +1,100 @@
+header, nav {
+  width: 100%;
+  margin: auto;
+}
+
+header {
+  height: 140px;
+  background-color: #fae9cf;
+}
+
+header img{
+  height: 90%;
+  padding-left: 43%;
+}
+
+@font-face {
+  font-family: "ZCOOLXiaoWei-Regular";
+  src: url("../Police/ZCOOLXiaoWei-Regular.ttf");
+}
+
+nav {
+  background-color: #693b58 ;
+  height: 60px;
+  min-width: 100%;
+}
+
+nav table {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+}
+nav table td {
+  width: 11.6%;
+  min-width: 10%;
+  font-size: 120%;
+  text-align: center;
+}
+
+nav table td a {
+  text-decoration: none;
+  color: white;
+}
+
+nav table td p{
+  color: #e96929;
+}
+
+nav table td a:hover {
+  color: #fae9cf;
+}
+#CoIn{
+  position: relative;
+  bottom: 24px;
+  width: 160px;
+  /* top: 11.2%; */
+  left: 85%;
+  background-color: #e96929;
+  padding: 10px;
+  color: black;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  font-style: normal;
+}
+
+#CoIn a {
+  text-decoration: none;
+  color: white;
+}
+
+#CoIn a:hover {
+  color: grey;
+}
+
+
+#Coco{
+  position: relative;
+  bottom: 24px;
+  width: 280px;
+  /* top: 11.2%; */
+  left: 80%;
+  background-color: #e96929;
+  padding: 10px;
+  color: black;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  font-style: normal;
+}
+
+#Coco span{
+  color: white;
+}
+
+#Coco a {
+  text-decoration: none;
+  color: white;
+}
+
+#Coco a:hover {
+  color: grey;
+}
