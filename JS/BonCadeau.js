@@ -18,7 +18,7 @@ select.innerHTML = str;
 
 
 // fonction qui crée une div recap en fonction de la valeur sélectionner dans le select
-function afficherRecap() {
+var afficherRecap =  function () {
     var divRecap = document.getElementById('recap')
     var selection = document.getElementById('PrixDuree')
     var texte = selection.options[selection.selectedIndex].text
