@@ -17,16 +17,29 @@ mapPrixDuree.forEach((key, val) => {
 select.innerHTML = str;
 
 
-// fonction qui crée une div recap en fonction de la valeur sélectionner dans le select
+// fonction qui crée des éléments H4 et p dans la div recap en fonction de la valeur sélectionner dans le select
 var afficherRecap =  function () {
     var divRecap = document.getElementById('recap')
     var selection = document.getElementById('PrixDuree')
     var texte = selection.options[selection.selectedIndex].text
     var prix = selection.options[selection.selectedIndex].value
-
-    divRecap.innerHTML = '<h4>Récapitulatif de la commande :</h4>' +
-        '<p>'+'Durée : '+texte+'</p>' +
-        '<p>'+'Prix : '+prix+'</p>'
+    var h4Recap = document.getElementById("h4Recap");
+    var pDuree = document.getElementById("pDuree");
+    var pPrix = document.getElementById("Pprix");
+    if (!h4Recap || !pDuree || !pPrix){         //aidé par gonzalo
+        h4Recap = document.createElement("h4");
+        h4Recap.id = "h4Recap"
+        pDuree = document.createElement("p");
+        pDuree.id = "pDuree"
+        pPrix = document.createElement("p");
+        pPrix.id = "Pprix"
+        divRecap.appendChild(h4Recap)
+        divRecap.appendChild(pDuree)
+        divRecap.appendChild(pPrix)
+    }
+    h4Recap.textContent = "Récapitulatif de la commande :"
+    pDuree.textContent =  'Durée : '+texte
+    pPrix.textContent =  'Prix : '+prix
 }
 // affichage de la div source : Gonzalo
 var selectPrix = document.getElementById('PrixDuree')
