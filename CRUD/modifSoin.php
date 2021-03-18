@@ -1,5 +1,6 @@
 <?php session_start(); ?>
 <?php if (!empty($_SESSION['PSEUDO_EMPLOYE'])) {  ?>
+
 <?php
 
 
@@ -90,7 +91,7 @@ if (isset($_POST['ok']) || isset($_POST['formModif']) ) {
                 <div class="form-group">
                   <div class="col-sm-10">
                     <label for="nom">Veuillez choisir le nom du massage</label>
-                    <select name="typeMassage" class="form-control" placeholder="Choisissez un type de compte">
+                    <select id="selectMassage"  name="typeMassage" class="form-control" placeholder="Choisissez un type de compte">
                       <optgroup label="Nom massage">
                         <?php
                         foreach ($soin as $soinsolo ):
@@ -105,11 +106,7 @@ if (isset($_POST['ok']) || isset($_POST['formModif']) ) {
                     </select>
                   </div>
                 </div>
-                <div class="form-group">
-                  <div class="col-sm-offset-2 col-sm-10">
-                    <button name="ok" class="btn btn-default"><span>Ok</span></button>
-                  </div>
-                </div>
+        
                 <div class="form-group">
                   <div class="col-sm-10">
                     <label for="nom">Modifier le nom du massage</label>
@@ -134,6 +131,8 @@ if (isset($_POST['ok']) || isset($_POST['formModif']) ) {
   </main>
   <?php include('../footer1.php') ?>
 </body>
+
+<script src="../JS/ModifierMassageAjax.js"></script>
 </html>
 <?php }
 else {
