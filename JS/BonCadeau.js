@@ -7,7 +7,7 @@ mapPrixDuree.set("1h","130 CHF");
 mapPrixDuree.set("1h15","160 CHF");
 mapPrixDuree.set("1h30","190 CHF");
 
-// boucle permettant de récupéréer les valeurs de la map et les afficher dans le select source : https://stackoverflow.com/questions/55921971/how-to-get-a-map-array-in-javascript-to-print-in-a-dropdown-list
+// boucle permettant de récupérer les valeurs de la map et les afficher dans le select source : https://stackoverflow.com/questions/55921971/how-to-get-a-map-array-in-javascript-to-print-in-a-dropdown-list
 let str = '<option>sélectionner une durée</option>';
 
 mapPrixDuree.forEach((key, val) => {

@@ -17,6 +17,6 @@ function afficherMassage(e){
             }
         }
     }
-    req.open('GET','requeteAjaxModifSoins.php?nom='+select,false);
+    req.open('GET','requeteAjaxModifSoins.php?nom='+select,true);
     req.send()
 }
