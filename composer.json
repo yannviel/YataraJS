@@ -1,7 +1,6 @@
 {
-    "name": "yann/test",
+    "name": "yann/test4",
     "require": {
-        "michelf/php-markdown": "^1.9",
-        "composer-plugin-api": "^2.0"
+        "ezsystems/ezpublish-kernel": "7.5.15.2"
     }
 }
