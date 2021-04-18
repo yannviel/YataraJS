@@ -1,0 +1,7 @@
+{
+    "name": "yann/test",
+    "require": {
+        "michelf/php-markdown": "^1.9",
+        "composer-plugin-api": "^2.0"
+    }
+}
