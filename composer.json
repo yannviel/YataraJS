@@ -1,6 +1,6 @@
 {
-    "name": "yann/test4",
+    "name": "yann/securite",
     "require": {
-        "ezsystems/ezpublish-kernel": "7.5.15.2"
+        "mautic/core": "3.3.2"
     }
 }
